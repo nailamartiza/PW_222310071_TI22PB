@@ -1,0 +1,30 @@
+GET http://127.0.0.1:8000/api/products
+
+###
+POST http://127.0.0.1:8000/api/products
+Content-Type: application/json
+
+{
+    "name": "Album LALALA",
+    "desc": "album Stray Kids",
+    "qty": 8,
+    "price": 350000
+}
+
+###
+GET http://127.0.0.1:8000/api/products/1
+
+###
+PUT http://127.0.0.1:8000/api/products/1
+Content-Type: application/json
+
+{
+    "name": "Album GoLive",
+    "desc": "album Stray Kids 2020",
+    "qty": 8,
+    "price": 350000
+}
+
+###
+DELETE http://127.0.0.1:8000/api/products/2
+
